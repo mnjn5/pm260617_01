@@ -1,10 +1,11 @@
 export default function AboutPage() {
   const history = [
-    { year: '2020', event: '회사 설립' },
-    { year: '2021', event: '첫 번째 제품 출시' },
-    { year: '2022', event: '시리즈 A 투자 유치' },
-    { year: '2023', event: '글로벌 시장 진출' },
-    { year: '2024', event: '누적 고객 1,000사 달성' },
+    { year: '2015', event: '엔터월드 설립' },
+    { year: '2017', event: '소속 아티스트 첫 정규 앨범 발매 및 데뷔 성공' },
+    { year: '2019', event: '대형 콘서트 프로덕션 사업부 출범' },
+    { year: '2021', event: '일본·동남아 시장 진출, 해외 투어 기획' },
+    { year: '2023', event: '누적 콘서트 관객 100만 명 달성' },
+    { year: '2024', event: '소속 아티스트 200인 달성, 글로벌 엔터테인먼트 그룹으로 성장' },
   ];
 
   return (
@@ -12,20 +13,29 @@ export default function AboutPage() {
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="mb-2 text-eyebrow font-medium uppercase tracking-widest text-ink-subtle">
+          <p className="mb-2 text-eyebrow font-medium uppercase tracking-widest text-primary">
             About
           </p>
           <h1 className="font-display text-display-md font-semibold text-ink">회사소개</h1>
         </div>
 
         {/* Overview */}
-        <section className="mb-16 rounded-lg border border-hairline bg-surface-1 p-xxl">
-          <h2 className="mb-4 text-headline font-semibold text-ink">회사 개요</h2>
-          <p className="text-body-lg text-ink-muted">
-            PM-site는 2020년 설립된 B2B 솔루션 전문 기업입니다.
-            고객의 비즈니스 문제를 기술로 해결하는 것을 사명으로 삼고 있습니다.
-            수백 개 기업 고객의 신뢰를 바탕으로 지속적으로 성장해 왔습니다.
-          </p>
+        <section className="mb-16 overflow-hidden rounded-lg border border-hairline bg-surface-1">
+          <img
+            src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1280&q=80&auto=format&fit=crop"
+            alt="엔터월드 공연 현장"
+            className="h-64 w-full object-cover"
+          />
+          <div className="p-xxl">
+            <h2 className="mb-4 text-headline font-semibold text-ink">회사 개요</h2>
+            <p className="text-body-lg text-ink-muted">
+              엔터월드는 2015년 설립된 종합 엔터테인먼트 기획사입니다.
+              아티스트 발굴과 육성, 대형 콘서트 프로덕션, 콘텐츠 제작을 중심으로
+              대한민국 엔터테인먼트 산업을 선도해 왔습니다.
+              10년의 업력과 200여 명의 소속 아티스트, 누적 관객 100만 명을 바탕으로
+              국내를 넘어 아시아 전역으로 무대를 넓혀가고 있습니다.
+            </p>
+          </div>
         </section>
 
         {/* Vision & Mission */}
@@ -33,13 +43,15 @@ export default function AboutPage() {
           <div className="rounded-lg border border-hairline bg-surface-1 p-lg">
             <h2 className="mb-3 text-card-title font-semibold text-ink">비전</h2>
             <p className="text-body text-ink-muted">
-              모든 기업이 기술을 통해 더 나은 미래를 만들 수 있도록 돕는 글로벌 솔루션 파트너
+              아시아를 대표하는 글로벌 엔터테인먼트 그룹으로 성장하여,
+              한국 문화의 세계화를 이끈다.
             </p>
           </div>
           <div className="rounded-lg border border-hairline bg-surface-1 p-lg">
             <h2 className="mb-3 text-card-title font-semibold text-ink">미션</h2>
             <p className="text-body text-ink-muted">
-              혁신적인 제품과 신뢰할 수 있는 서비스로 고객의 성장을 가속화한다
+              아티스트의 꿈을 실현하고, 팬들에게 최고의 감동을 선사하며,
+              엔터테인먼트 산업의 새로운 기준을 만든다.
             </p>
           </div>
         </section>
@@ -49,9 +61,18 @@ export default function AboutPage() {
           <h2 className="mb-8 text-headline font-semibold text-ink">주요 사업 영역</h2>
           <div className="grid grid-cols-1 gap-lg md:grid-cols-3">
             {[
-              { title: '엔터프라이즈 소프트웨어', desc: '대기업 맞춤형 ERP 및 업무 자동화 솔루션' },
-              { title: 'SaaS 플랫폼', desc: '클라우드 기반 구독형 비즈니스 솔루션' },
-              { title: '기술 컨설팅', desc: 'IT 전략 수립 및 디지털 전환 컨설팅' },
+              {
+                title: '아티스트 매니지먼트',
+                desc: '신인 발굴부터 국내외 활동 지원, 브랜드 관리까지 아티스트의 전 생애를 함께합니다.',
+              },
+              {
+                title: '이벤트 프로덕션',
+                desc: '콘서트, 팬미팅, 시상식, 페스티벌 등 모든 엔터테인먼트 이벤트를 기획·운영합니다.',
+              },
+              {
+                title: '콘텐츠 제작',
+                desc: '음원 프로듀싱, 뮤직비디오, 숏폼 콘텐츠 등 디지털 시대에 맞는 콘텐츠를 제작합니다.',
+              },
             ].map(({ title, desc }) => (
               <div key={title} className="rounded-lg border border-hairline bg-surface-1 p-lg">
                 <h3 className="mb-2 text-card-title font-semibold text-ink">{title}</h3>
@@ -81,7 +102,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-4 text-body-sm text-ink-muted md:grid-cols-2">
             <div>
               <p className="mb-1 font-medium text-ink">이메일</p>
-              <p>contact@pm-site.com</p>
+              <p>contact@enterworld.co.kr</p>
             </div>
             <div>
               <p className="mb-1 font-medium text-ink">전화</p>
@@ -89,7 +110,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="mb-1 font-medium text-ink">주소</p>
-              <p>서울특별시 강남구 테헤란로 123</p>
+              <p>서울특별시 강남구 테헤란로 123 엔터월드빌딩</p>
             </div>
             <div>
               <p className="mb-1 font-medium text-ink">업무시간</p>

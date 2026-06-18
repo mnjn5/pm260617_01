@@ -24,7 +24,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-hairline bg-canvas">
       <div className="max-w-content mx-auto flex h-14 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="text-body-sm font-semibold tracking-tight text-ink">
-          PM-site
+          ENTERWORLD
         </Link>
 
         {/* Desktop nav */}

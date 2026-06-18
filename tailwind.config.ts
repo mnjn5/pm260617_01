@@ -6,12 +6,12 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#5e6ad2',
-          hover:   '#828fff',
-          focus:   '#5e69d1',
+          DEFAULT: '#9333ea',
+          hover:   '#a855f7',
+          focus:   '#7c3aed',
           on:      '#ffffff',
         },
-        'brand-secure': '#7a7fad',
+        'brand-secure': '#c084fc',
 
         canvas: '#010102',
         surface: {
