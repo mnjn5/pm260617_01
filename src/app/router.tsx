@@ -12,6 +12,7 @@ import CommunityPage from '../pages/CommunityPage';
 import PostDetailPage from '../pages/PostDetailPage';
 import PostWritePage from '../pages/PostWritePage';
 import LoginPage from '../pages/LoginPage';
+import LoginCompletePage from '../pages/LoginCompletePage';
 import SignupPage from '../pages/SignupPage';
 import MyPage from '../pages/MyPage';
 import AdminPage from '../pages/AdminPage';
@@ -34,6 +35,7 @@ export const router = createBrowserRouter([
       { path: 'community', element: <CommunityPage /> },
       { path: 'community/:id', element: <PostDetailPage /> },
       { path: 'login', element: <LoginPage /> },
+      { path: 'login/complete', element: <LoginCompletePage /> },
       { path: 'signup', element: <SignupPage /> },
       {
         element: <ProtectedRoute />,
