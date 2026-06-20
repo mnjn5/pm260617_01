@@ -14,6 +14,7 @@ import PostWritePage from '../pages/PostWritePage';
 import LoginPage from '../pages/LoginPage';
 import LoginCompletePage from '../pages/LoginCompletePage';
 import SignupPage from '../pages/SignupPage';
+import SignupCompletePage from '../pages/SignupCompletePage';
 import MyPage from '../pages/MyPage';
 import AdminPage from '../pages/AdminPage';
 import AdminProductsPage from '../pages/admin/AdminProductsPage';
@@ -37,6 +38,7 @@ export const router = createBrowserRouter([
       { path: 'login', element: <LoginPage /> },
       { path: 'login/complete', element: <LoginCompletePage /> },
       { path: 'signup', element: <SignupPage /> },
+      { path: 'signup/complete', element: <SignupCompletePage /> },
       {
         element: <ProtectedRoute />,
         children: [

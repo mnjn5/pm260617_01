@@ -32,7 +32,7 @@ export default function SignupPage() {
       options: { data: { name: values.name, phone: values.phone } },
     });
     if (error) { setError(error.message); return; }
-    navigate('/');
+    navigate('/signup/complete');
   }
 
   return (
